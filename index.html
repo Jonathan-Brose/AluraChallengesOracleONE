@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://www.alura.com.br/"><img src="./assets/img/logo.png" /></a>
+    </header>
+    <main class="apresentacao">
+      <section class="apresentacao__conteudo"> 
+        <h1 class="Titulo__da__pagina"><strong>DECODIFICADOR DE TEXTOS</strong></h1>
+        <h2 class="apresentacao__conteudo__subtitulo">Criptografe e descriptografe textos de forma Online</h2>
+      </section>
+      <section id="encrypt-decrypt">
+        <textarea
+          placeholder="Digite seu texto"
+          rows="15"
+          id="encrypt-decrypt-text"
+        ></textarea>
+        <div class="alert-message">
+          <p><i></i> Use apenas letras minúsculas, sem acento, pontuação ou caracteres especiais</p>
+        </div>
+        <div class="buttons">
+          <input type="button" id="encrypt" value="Criptografar" />
+          <input type="button" id="decrypt" value="Descriptografar" />
+        </div>
+      </section>
+      <section id="encrypt-decrypt-response">
+        <div class="empty-response">
+          <h3 class="title">Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="./assets/img/cadeado.png"/>
+        </div>
+        <div class="content-response" style="display: none">
+          <div id="result-message" style="display: none; text-align: center; margin-top: 10px; color: blue;">
+            Resultado
+          </div>
+          <textarea rows="15" id="encrypt-decrypt-text-response"></textarea>
+          <input type="button" id="copy" value="Copiar" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer-centered">
+      <div>
+        <p>© 2024 - Desenvolvido por Jonathan Bröse - Desafio Alura</p>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
